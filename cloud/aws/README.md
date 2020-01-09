@@ -97,9 +97,9 @@ EC2 instance typical settings:
 
 In both cases, the server is set-up with a few modifications.
 
- . an assumed single volume at /dev/xvdf with mount point /data owned by the `ubuntu` user  
- . an environment varible `$CHAIN_DATA=/data/{BLOCKCHAIN_ID}` and updated $PATH
- . install python package manager `pip`.
+ * an assumed single volume at /dev/xvdf with mount point /data owned by the `ubuntu` user  
+ * an environment varible `$CHAIN_DATA=/data/{BLOCKCHAIN_ID}` and updated $PATH
+ * install python package manager `pip`.
 
 See the bash shell script below:
 
