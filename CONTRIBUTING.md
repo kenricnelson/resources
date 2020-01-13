@@ -19,3 +19,16 @@ Useful ways to contribute include
 
 
 Thank you for you interest in contributing to this resource.
+
+Adding a New Coin to the Repository
+-----------------------------------
+
+To add a coin not currently covered, please follow these instructions.
+
+1. Fork the resources repository.
+
+2. Maneuver to the resources/coin folder and copy the template folder. Rename this copy to the name of the coin you wish to add.
+
+3. Use the template to fill out the README.md, as well as populate the configs and features folders. For an example of what this should look like, see any of the already existing coins.
+
+4. Submit a pull request with the changes so it can be reviewed and pushed.
