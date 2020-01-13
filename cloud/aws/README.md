@@ -42,9 +42,9 @@ Network
 
 There are some preliminary steps to get up and running on AWS that can be done once:  
 
- . create a network (VPC)  
- . an identity (IAM)  
- . private key pair (KEYPAIR)  
+* create a network (VPC)  
+* an identity (IAM)  
+* private key pair (KEYPAIR)  
 
 Either step thru the [Network notebook](python/Network.ipynb) filling
 in the appropriate local directory to store the generated keypair .pem
@@ -101,7 +101,7 @@ In both cases, the server is set-up with a few modifications.
  * an environment varible `$CHAIN_DATA=/data/{BLOCKCHAIN_ID}` and updated $PATH
  * install python package manager `pip`.
 
-See the bash shell script below:
+See the [ubuntu bash shell script](setup_ubuntu,sh), reproduced below:
 
 ```bash
 #!/bin/bash
@@ -126,6 +126,15 @@ cd $CHAIN_DATA
 sudo apt-get update
 sudo apt-get install -y python3-pip
 ```
+
+The setup script performs:
+
+* makes a filesystem on `/dev/xvdf`
+* creates a directory and mount point for `/data`
+* changes ownership from root to ubuntu
+* creates en envirnoment variable `$CHAIN_DATA`
+* adds mount point to `$PATH`
+* installs python package manager `pip`
 
 Each **coin** also includes additional shell scripts detailed in their
 respective folders; for example [bitcoin]()  
