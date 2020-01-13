@@ -101,7 +101,7 @@ In both cases, the server is set-up with a few modifications.
  * an environment varible `$CHAIN_DATA=/data/{BLOCKCHAIN_ID}` and updated $PATH
  * install python package manager `pip`.
 
-See the [ubuntu bash shell script](setup_ubuntu,sh), reproduced below:
+See the [ubuntu bash shell script](setup_ubuntu.sh), reproduced below:
 
 ```bash
 #!/bin/bash
