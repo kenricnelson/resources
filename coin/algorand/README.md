@@ -18,18 +18,19 @@ Network Configurations
 ----------------------
 There are four types of networks available with various [configuration options](https://developer.algorand.org/docs/node-configuration-settings).
 
-1. [Full archival Mainnet](configuration/archive.json) with all transactions and blocks - 2CPU/4Gb/60Gb
-2. Default [pruned Mainnet](configuration/default.json) with last 1000 blocks and all account balances -  2CPU/4Gb/5Gb
-3. [Testnet](configuration/testnet.json) with [faucet](https://bank.testnet.algorand.network/)
+1. [Full archival Mainnet](configs/archive.json) with all transactions and blocks - 2CPU/4Gb/60Gb
+2. Default [pruned Mainnet](configs/default.json) with last 1000 blocks and all account balances -  2CPU/4Gb/5Gb
+3. [Testnet](configs/testnet.json) with [faucet](https://bank.testnet.algorand.network/)
 4. [Betanet](https://developer.algorand.org/docs/getting-started-betanet) periodically restarted with new genesis block.
 
 Nodes
 -----
-[default](configs/default.toml)  
-[testnet](configs/testnet.toml)  
-[archive](configs/archive.json)
-[minimal](configs/minimal.toml)
-[betanet](configs/betanet.toml)
+
+* [default](configs/default.toml)  
+* [testnet](configs/testnet.toml)  
+* [archive](configs/archive.json)
+* [minimal](configs/minimal.toml)
+* [betanet](configs/betanet.toml)
 
 Install
 -------
