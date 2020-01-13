@@ -31,7 +31,7 @@ Nodes
 Install
 -------
 
-Shell script for [install](configs/setup.sh) as a [configs/service](blockchain.service)
+Shell script for [install](configs/setup.sh) as a [service](configs/blockchain.service)
 
 
 Mainnet nodes take about 6 hours to sync using a 8CPU/32GB
