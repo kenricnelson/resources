@@ -19,10 +19,34 @@ competitive projects.
 What this project does
 ----------------------
 
-1. Reproducible and minimal
+This repo provides the bare minimum to set up cloud resources and sync
+a blockchain from either the genesis block or from an already synched
+blockchain.  We abstract away the environment requirements using
+standardized cloud services.  Further we provide standardized
+configuration files, set-up scripts and server configurations.  
 
-2. Standard environment
+Our goals are to provide:
 
-3. Shorten learning curve
+1. Minimal resources to launch a server from a cloud based service.
 
-4. Comparable scaffolding
+2. Reproducible.  This project is not seeking to become a trusted
+source, but rather a reproducible resource for developers to quickly
+move up the learning curve.
+
+3. Standard environment.  Provide a small number of environment
+variables, system services and set-up scripts common to all
+blockchains.
+
+4. Shorten learning curve.  Removing some of the common software
+engineering tasks and providing synched blockchains allows developer
+to focus on the features of each project.
+
+5. Comparable features.  Provide comparative statistics, installed
+scaffolding, tools including command line interface links, links to
+SDKs and some common, simple capabilities (tokens, smart contracts,
+etc.)
+
+Contributing
+------------
+
+We welcome and urge contributions to this public resource; browse [CONTRIBUTING](CONTRIBUTING.md) to see how you can help.
