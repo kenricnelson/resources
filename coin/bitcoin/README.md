@@ -16,23 +16,22 @@ There are four major types of networks available with various
 [configuration
 options](https://jlopp.github.io/bitcoin-core-config-generator/).
 
-1. [Full archival Mainnet](configs/archival.toml) with all transactions indexed (txindex=1) and blocks - 8CPU/32Gb/300Gb
+1. [Full archival Mainnet](configs/archive.toml) with all transactions indexed (txindex=1) and blocks - 8CPU/32Gb/300Gb
 2. Default [pruned Mainnet](configs/default.toml) with last 1000 blocks and all account balances -  2CPU/4Gb/5Gb
 3. [Testnet](configs/testnet.toml) with [faucet](https://tpfaucet.appspot.com/)
 4. [Regtest](https://bitcoin.org/en/glossary/regression-test-mode) A local testing environment in which developers can almost instantly generate blocks on demand for testing events, and can create private satoshis with no real-world value.
 
 Nodes
 -----
-[default](configs/default.toml)  
-[testnet](configs/testnet.toml)  
-[archive](configs/archive.toml)
-[minimal](configs/minimal.toml)
-[betanet](configs/betanet.toml)
+* [archive](configs/archive.toml)
+* [default](configs/default.toml)  
+* [testnet](configs/testnet.toml)  
+* [minimal](configs/minimal.toml)
 
 Install
 -------
 
-Shell script for [install](configs/setup.sh) as a [service](blockchain.service)
+Shell script for [install](configs/setup.sh) as a [configs/service](blockchain.service)
 
 
 Mainnet nodes take about 6 hours to sync using a 8CPU/32GB
