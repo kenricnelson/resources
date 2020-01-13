@@ -1,0 +1,19 @@
+[Unit]
+Description=Bitcoin Core Daemon
+After=network.target
+
+[Service]
+# picks up users default bitcoin.conf in $CHAIN_DATA
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/local/bin/bitcoind --datadir=/data/bitcoin.org/ -daemon
+Restart=on-failure
+
+# Never kill bitcoind, send a stop thru the cli
+# /usr/local/bin/bitcoind --datadir=/data/bitcoin.org/
+# Specifies which signal to use when killing a service. Defaults to SIGTERM.
+# SIGHUP gives bitcoin time to exit cleanly before SIGKILL (default 90s)
+KillSignal=SIGHUP
+
+[Install]
+WantedBy=default.target
